@@ -3,18 +3,18 @@ set -e
 
 echo "Building backend..."
 pushd backend
-#if node_modules doesn't exist, npm install
+#if node_modules doesn't exist, pnpm install
 if [ ! -d "node_modules" ]; then
-  npm install
+  pnpm install
 fi
-npm run build
+pnpm run build
 popd
 echo "Backend built successfully!"
 pushd frontend
 if [ ! -d "node_modules" ]; then
-  npm install
+  pnpm install
 fi
-npm run build
+pnpm run build
 popd
 echo "Frontend built successfully!"
 mkdir -p dist
