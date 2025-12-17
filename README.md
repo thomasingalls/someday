@@ -51,8 +51,8 @@ const TIMESLOT_DURATION = 30;
 ### Develop
 
 - `cd ./frontend`
-- `npm install`
-- `npm run dev`
+- `pnpm install`
+- `pnpm run dev`
 - dummyData will be generated on the fly using the generateDummyData function ~line 42 in `frontend/hooks/useGoogleTimeSlots.ts`
 
 ### Install 
@@ -64,9 +64,9 @@ __you may need to sign out of all accounts, and only into your target account__
 
 1. **Install `clasp`:**
    - Ensure you have Node.js installed.
-   - Install `clasp` globally using npm:
+   - Install `clasp` globally using pnpm:
      ```bash
-     npm install -g @google/clasp@^2.5.0
+     pnpm install -g @google/clasp@^2.5.0
      ```
 
 2. **Login with `clasp`:**
@@ -98,7 +98,7 @@ __you may need to sign out of all accounts, and only into your target account__
 2. **Deploy the Script:**
    - Use the following command to deploy your script:
      ```bash
-     npm run deploy
+     pnpm run deploy
      ```
 
 
@@ -126,9 +126,9 @@ __you may need to sign out of all accounts, and only into your target account__
 
 ## Cheat Sheet
 
-- `npm run deploy` - build and delpoy
+- `pnpm run deploy` - build and delpoy
 
-- `npm run build` - build only
+- `pnpm run build` - build only
 
 - `undeployall.sh` - undeploy all versions of the script
 
